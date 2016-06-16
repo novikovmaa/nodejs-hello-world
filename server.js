@@ -2,7 +2,7 @@ function console_log(s) {
         console.log(new Date().toString()+" "+s);
 }
 var io = require('socket.io-client');
-var socket = io.connect("https://event.staging.demio.com:3000");
+var socket = io.connect("*");
 
 socket.on('connect', function () {
    console_log(socket.id);
