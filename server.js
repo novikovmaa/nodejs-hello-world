@@ -20,7 +20,5 @@ socket.on('disconnect', function () {
 
 socket.on('endWebinarForRecording', function(webinarId) {
        console_log("webinar_ended "+webinarId);
-       webinarEnded[parseInt(webinarId)]=1;
-       checkEnded(parseInt(webinarId));
 });
 
